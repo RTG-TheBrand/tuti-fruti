@@ -118,6 +118,7 @@ function draw(){
   knife.x=mouseX;
        Menemy();
   Sfruit();
+  touches=[];
       
     }
    

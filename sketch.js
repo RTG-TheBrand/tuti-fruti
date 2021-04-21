@@ -98,12 +98,14 @@ function draw(){
     knife.y=height/3;
     mgroup.destroyEach();
     fgroup.destroyEach();
+    mgroup.x=1000000000000;
+    fgroup.x=1000000000000;
     
     restart.visible=true;
     restart.y=height/2;
     
    // restart.onMousePressed = function(){
-      if(mousePressedOver(restart)){
+      if(touches.length>0 || mousePressedOver(restart)){
       score=0;
       knife.visible=false;
       gameState=PLAY;
